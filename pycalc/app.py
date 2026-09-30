@@ -23,7 +23,7 @@ OPERACIONES = {
 
 @app.get("/")
 def index():
-    return jsonify(app="pycalc", version="1.2", operaciones=list(OPERACIONES))
+    return jsonify(app="pycalc", version="1.3", operaciones=list(OPERACIONES))
 
 
 @app.get("/<op>/<a>/<b>")

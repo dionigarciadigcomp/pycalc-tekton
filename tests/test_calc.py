@@ -22,3 +22,6 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         calc.divide(1, 0)
+
+def test_power():
+    assert calc.power(2, 3) == 8

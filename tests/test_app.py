@@ -34,6 +34,3 @@ def test_power_endpoint(client):
     respuesta = client.get("/power/2/3")
     assert respuesta.status_code == 200
     assert respuesta.get_json() == {"resultado": 8.0}
-
-def test_power():
-    assert calc.power(2, 3) == 8
